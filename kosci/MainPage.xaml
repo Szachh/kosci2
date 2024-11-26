@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kosci.MainPage">
+
+    <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="*,*,*,*,*,*">
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Text="Gra w kości" HorizontalTextAlignment="Center"></Label>
+        <Button Grid.Column="2" Grid.Row="1" Text="Rzut koścmi" Clicked="Button_Clicked"></Button>
+        <Image x:Name="kosc1" Grid.Column="0" Grid.Row="2" Source="kosc0.png"></Image>
+        <Image x:Name="kosc2" Grid.Column="1" Grid.Row="2" Source="kosc0.png"></Image>
+        <Image x:Name="kosc3" Grid.Column="2" Grid.Row="2" Source="kosc0.png"></Image>
+        <Image x:Name="kosc4" Grid.Column="3" Grid.Row="2" Source="kosc0.png"></Image>
+        <Image x:Name="kosc5" Grid.Column="4" Grid.Row="2" Source="kosc0.png"></Image>
+        <Label Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5" Text="Wynik tego losowania: " HorizontalTextAlignment="Center"></Label>
+        <Label Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5" Text="Wynik gry: " HorizontalTextAlignment="Center"></Label>
+        <Button Grid.Column="2" Grid.Row="5" Text="Resetuj wynik"></Button>
+    </Grid>
+
+</ContentPage>
