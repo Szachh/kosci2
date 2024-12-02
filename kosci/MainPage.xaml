@@ -1,19 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="kosci.MainPage">
 
-    <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="*,*,*,*,*,*">
-        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Text="Gra w kości" HorizontalTextAlignment="Center"></Label>
-        <Button Grid.Column="2" Grid.Row="1" Text="Rzut koścmi" Clicked="Button_Clicked"></Button>
+    <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="50,75,*,50,50,75" BackgroundColor="Beige">
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Text="Gra w kości" FontSize="40" HorizontalTextAlignment="Center"></Label>
+        <Button Grid.Column="2" Grid.Row="1" Text="Rzut koścmi" HeightRequest="50" WidthRequest="150" BackgroundColor="DarkRed" Clicked="Button_Clicked"></Button>
+        <Label Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5" BackgroundColor="white"></Label>
         <Image x:Name="kosc1" Grid.Column="0" Grid.Row="2" Source="kosc0.png"></Image>
         <Image x:Name="kosc2" Grid.Column="1" Grid.Row="2" Source="kosc0.png"></Image>
         <Image x:Name="kosc3" Grid.Column="2" Grid.Row="2" Source="kosc0.png"></Image>
         <Image x:Name="kosc4" Grid.Column="3" Grid.Row="2" Source="kosc0.png"></Image>
         <Image x:Name="kosc5" Grid.Column="4" Grid.Row="2" Source="kosc0.png"></Image>
-        <Label Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5" Text="Wynik tego losowania: " HorizontalTextAlignment="Center"></Label>
-        <Label Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5" Text="Wynik gry: " HorizontalTextAlignment="Center"></Label>
-        <Button Grid.Column="2" Grid.Row="5" Text="Resetuj wynik"></Button>
+        <Label x:Name="losowanie" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5" Text="Wynik tego losowania: " HorizontalTextAlignment="Center"></Label>
+        <Label x:Name="wynik" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5" Text="Wynik gry: " HorizontalTextAlignment="Center"></Label>
+        <Button Grid.Column="2" Grid.Row="5" Text="Resetuj wynik" HeightRequest="50" WidthRequest="150" BackgroundColor="DarkRed" Clicked="Reset"></Button>
     </Grid>
 
 </ContentPage>
